@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Music Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto mt-12 p-6 bg-gray-800 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-semibold mb-6">JavaScript Music Player</h1>
+        <audio id="audioPlayer" class="w-full" controls>
+            <source src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls flex justify-center mt-6">
+            <input type="file" id="fileInput" accept="audio/*" class="hidden">
+            <button id="selectBtn" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mr-4">Select Music</button>
+            <button id="playBtn" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg mr-4">Play</button>
+            <button id="pauseBtn" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg mr-4">Pause</button>
+            <button id="stopBtn" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg">Stop</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

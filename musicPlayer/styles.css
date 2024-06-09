@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls button {
+    @apply bg-gray-800 text-white px-4 py-2 rounded;
+}
